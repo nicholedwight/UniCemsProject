@@ -63,15 +63,15 @@ ul li ul {
   -transition: opacity 0.2s;
 }
 
-ul li ul li { 
-  background: #474545; 
-  display: block; 
+ul li ul li {
+  background: #474545;
+  display: block;
   color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
 
-ul li ul li:hover { 
-	background: #2A2A2A; 
+ul li ul li:hover {
+	background: #2A2A2A;
 }
 
 ul li:hover ul {
@@ -89,6 +89,25 @@ nav a {
 
 nav a:visited {
 	color: inherit;
+}
+
+.quickjump li {
+  display: block;
+  background: transparent;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.quickjump li a {
+  text-decoration: none;
+  text-shadow: none;
+  font-size: 18px;
+  color: #000000;
+}
+
+.quickjump li a:hover {
+  color: #FFFFFF;
 }
 
 #up {
@@ -140,12 +159,12 @@ nav a:visited {
     -moz-transition-duration: 0.8s;
     -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
-     
+
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
     transition-property: transform;
-     
+
     overflow:hidden;
 }
 
