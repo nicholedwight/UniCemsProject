@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta NAME="course" CONTENT="G451">
+	<meta NAME="award" CONTENT="BSc/DigitalMedia">
+	<meta NAME="type" CONTENT="student">
+	<!-- Please do not remove the above tags -->
+	<title>Nichole: Mouseover</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript">
+		var over = new Image()
+		over.src = "img/liz1.jpg"
+	</script>
+</head>
+<body>
+
+<!-- Header Wrapper -->
+<div id="header-wrapper">
+	<div class="container">
+		<!-- Header -->
+		<div id="header">
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1>Mouseover</h1>
+				<span class="byline">This is the first exercise for Mouseovers</span>
+			</div>
+			<!-- /Logo -->
+
+			<!-- Nav -->
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="work.html">My Work</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</div>
+			<!-- /Nav -->
+
+		</div>
+		<!-- /Header -->
+	</div>
+</div>
+<!-- /Header Wrapper -->
+
+<!-- Main Wrapper -->
+<div class="wrapper">
+	<div class="title">Exercise One</div>
+
+<!-- Content -->
+<div id="content">
+	<h1>Here's a couple of pictures.</h1>
+	<p>
+		Move the mouse over to change the person shown.
+		<a href="#" onMouseOver="document.images[0].src=over.src"
+		onMouseOut="document.images[0].src='img/byron.jpg'">
+			<img src="img/byron.jpg" border="1" align="middle" alt="Byron">
+		</a>
+	</p>
+	<a href="http://www.cems.uwe.ac.uk/html-validator/check?uri=referer">
+	<img src="images/valid-html401.png" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+	<p>This page passed HTML 4.01 Transitional Validation. <!-- Nav changed to div with id to pass validation --></p>
+</div>
+<h2><a href="itwp.html">Go Back</a></h2>
+<!-- /Content -->
+
+</div>
+<!-- /Main Wrapper -->
+
+</body>
+</html>

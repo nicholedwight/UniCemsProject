@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta NAME="course" CONTENT="G451">
+	<meta NAME="award" CONTENT="BSc/DigitalMedia">
+	<meta NAME="type" CONTENT="student">
+	<!-- Please do not remove the above tags -->
+	<title>Nichole: Calculator</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript">
+		<!--hide the javascript code from older browsers //this was new, I didn't know you could do this in JavaScript
+			function multiply() {
+				var one = eval(document.theForm.elements[0].value) //0 is the first number inputed by the user, since multiply takes two arguments
+				var two = eval(document.theForm.elements[1].value)
+				var prod = one * two
+				alert(one + " times " + two + " is " + prod) //three variables were created above, two text(numbers), one a function(multiplying them both); and this puts them all together for the user to see.
+			}
+		//stop hiding -->
+	</script>
+</head>
+<body>
+<!-- Header Wrapper -->
+	<div id="header-wrapper">
+		<div class="container">
+			<!-- Header -->
+			<div id="header">
+
+				<!-- Logo -->
+				<div id="logo">
+					<h1>Calculator</h1>
+					<span class="byline">This is the first exercise for Standardised</span>
+				</div>
+				<!-- /Logo -->
+
+				<!-- Nav -->
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="work.html">My Work</a></li>
+						<li><a href="contact.html">Contact Me</a></li>
+					</ul>
+				</div>
+				<!-- /Nav -->
+
+			</div>
+			<!-- /Header -->
+		</div>
+	</div>
+	<!-- /Header Wrapper -->
+
+<!-- Main Wrapper -->
+<div class="wrapper">
+	<div class="title">Calculator</div>
+	<div class="container">
+			
+		<!-- Content -->
+		<div id="content">
+		<form name="theForm" action="">
+			<input type="text"> * <input type="text">
+			<input type="button" value="Show result" onClick="multiply()">
+		</form>
+		    <a href="http://www.cems.uwe.ac.uk/html-validator/check?uri=referer">
+		    <img src="images/valid-html401.png" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+		<p>This page passed HTML 4.01 Transitional Validation. <!-- Nav changed to div with id to pass validation --></p>
+		</div>
+		<!-- /Content -->
+	</div>
+<h2><a href="itwp.html">Go Back</a></h2>
+</div>
+<!-- /Main Wrapper -->
+
+</body>
+</html>

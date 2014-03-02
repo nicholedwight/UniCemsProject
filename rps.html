@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta NAME="course" CONTENT="G451">
+	<meta NAME="award" CONTENT="BSc/DigitalMedia">
+	<meta NAME="type" CONTENT="student">
+	<!-- Please do not remove the above tags --> 
+	<title>Javascript Extras</title> 
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+<!-- Header Wrapper -->
+<div id="header-wrapper">
+	<div class="container">
+		<!-- Header -->
+		<div id="header">
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1>JavaScript Extras</h1>
+				<span class="byline">This is a page for a game of Rock, Paper, Scissors</span>
+			</div>
+			<!-- /Logo -->
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="work.html">My Work</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</nav>
+			<!-- /Nav -->
+
+		</div>
+		<!-- /Header -->
+	</div>
+</div>
+<!-- /Header Wrapper -->
+
+<!-- Main Wrapper -->
+<div class="wrapper">
+	<div class="title">Rock, Paper, Scissors</div>
+
+	<!-- Content -->
+	<div id="content">
+		<button class="javascript" onClick="everything()">Play!</button>
+		<!-- This is JavaScript I was taught the basics of in the JavaScript section of Codecademy.com, I expanded upon it. -->
+		<script>
+			function everything() {
+		 		var userChoice = prompt("Do you choose rock, paper or scissors?");
+				var computerChoice = Math.random();
+				if (computerChoice < 0.34) {
+					computerChoice = "rock";
+				} else if(computerChoice <= 0.67) {
+					computerChoice = "paper";
+				} else {
+					computerChoice = "scissors";
+				}
+
+				var compare = function(choice1, choice2) {
+				    if (choice1 === choice2) {
+				        alert("The result is a tie!");
+				    } 
+				    if (choice1 === "rock") {
+				            if (choice2 === "scissors") {
+				                alert("Computer chose Scissors. Rock wins!");
+				            } else {
+				                alert("Computer chose Paper. Paper wins!");
+				            }
+				    }
+				    if (choice1 === "rock") {
+				        if (choice2 === "paper") {
+				            alert("Computer chose Paper. Paper wins!");
+				        } else {
+				            alert("Computer chose Scissors. Rock wins!");
+				        }
+				    }
+				    if (choice1 === "paper") {
+				        if (choice2 === "rock") {
+				            alert("Computer chose Rock. Paper wins!");
+				        } else {
+				            alert("Computer chose Scissors. Scissors wins!");
+				        }
+				    }
+				    if (choice1 === "paper") {
+				        if (choice2 === "scissors") {
+				            alert("Computer chose Scissors. Scissors wins!");
+				        } else {
+				            alert("Computer chose Rock. Paper wins!");
+				        }
+				    }
+				    if (choice1 === "scissors") {
+				        if (choice2 === "rock") {
+				            alert("Computer chose Rock. Rock wins!");
+				        } else {
+				            alert("Computer chose Paper. Scissors wins!");
+				        }
+				    }
+				    if (choice1 === "scissors") {
+				        if (choice2 === "paper") {
+				            alert("Computer chose Paper. Scissors wins!");
+				        } else {
+				            alert("Computer chose Rock. Rock wins!");
+				        }
+				    }
+				};
+
+			compare(userChoice, computerChoice);
+		}
+		</script>
+		<p> Note: If no alerts popup, you've disabled them or misspelled your choice. </p> <!-- Found this error when testing on Chrome and pushed the disable future button... Also, I'm unsure why two alert boxes show in a row showing the result of who won -->
+	</div>
+	<!-- /Content -->
+<h2><a href="javascriptextras.html">Go Back</a></h2>
+</div>
+<!-- /Main Wrapper -->
+
+</body>
+</html>

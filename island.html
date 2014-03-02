@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta NAME="course" CONTENT="G451">
+	<meta NAME="award" CONTENT="BSc/DigitalMedia">
+	<meta NAME="type" CONTENT="student">
+	<!-- Please do not remove the above tags -->
+	<title>Nichole: designer, developer, student</title>
+	<link rel="stylesheet" href="css/mms.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+	<body>
+		<div id="header-wrapper">
+			 <nav>
+				<ul class="nav">
+					<li>
+						<a href="#">Island Content</a>
+							<ul>
+								<li><a href="#intro" class="smoothscroll">Island Views</a></li>
+								<li><a href="#project-1" class="smoothscroll">Planning and Resources</a></li>
+							</ul>
+					</li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="mmsprojects.html">My Other Work</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="contentcontainer">
+			<a href="#intro" id="up" class="smoothscroll"><img src="img/top.png"></a>
+			<div class="islandintro" id="intro">
+				<div class="wrapper">
+					<img src="img/dashed.png">
+					<h2>Here you can find the documentation of my time as a castaway on an isolated island.</h2>
+					<img src="img/dashed.png">
+					<h2>Island Views</h2>
+						<embed src="videos/IslandScreens.swf" width="1000" height="1000">
+
+				</div>
+			</div>
+			<div class="patterndown"></div>
+			<div class="project" id="project-1">
+				<div class="wrapper">
+					<h2>Planning and Resources</h2>
+					<h3>Planning</h3>
+					<h4>Flash Layout</h4>
+						<p>This is the wireframe I made for a basis of the layout of the Flash scenario for the island views and audio and video I had chosen to take with me</p>
+						<img src="img/islandplanning.jpg" alt="Flash Island Planning">
+						<p>When I was putting together the Flash scenario, the layout changed slightly, but that's always to be expected, it's just progress.</p>
+						<p>I really didn't have too much experience with Flash or ActionScript before this assignment so I spent a lot of time googling for how to do things, i.e. link buttons to previous pages, which was more complicated than expected, I found I had to link back to the first frame and then to whatever page the button really needed. This can be seen below</p>
+						<p>BackIcon.addEventListener(MouseEvent.CLICK, function(me:MouseEvent):void{<br>
+						  goToFrame(me, 1); <br>
+						  goToFrame(me, 50) //Added second stop to prevent bug where videos would only play after going to Frame 1<br>
+						  });</p>
+						<p>Not only did this fix prevent the videos from not playing after I'd already clicked on one, since I had to go back to the video page, then click on another. There was another issue where my Back button on the Cello information page didn't link to anywhere! Adding in this bit of code and making sure the button physically appeared on frame 1 and frame 30(where it intended to go) fixed the issue.</p>
+					<h4>3D Modelling</h4>
+						<p>The majority of planning was on the 3D Island itself. I had tried about 3 or 4 different island terrain scenarios before settling on the final, I kept wanting to put a volcanoe into it, but it seemed very unnecessary, given it wasn't listed in the brief. I spent the majority of my time in Mudbox and Zbrush creating the models to put on the terrain, the pet, trees, and cabin. The SOS rocks were made in Mudbox when the terrain was created.</p>
+						<p>The biggest issue was when I would transfer the dragon model from Zbrush to Maya via GOZ, the render would be very reflective(this also happened to an extent with my cabin model), there wasn't enough time to find out why this happened or render it in another application and transfer it, so I provided the render from Zbrush for the pet slide in the Flash scenario, that way the detail and proper material can be seen. Below is a test render of the dragon in Maya with mental ray(rendering a Zbrush model in Maya Software crashes my computer), the reflectiveness is very visible. The model also appeared to have 'cracked' when I created the displacement and texture maps in Zbrush to transfer it over.</p>
+						<img src="img/dragonrender.png" alt="Reflective Example of Dragon">
+						<p>This just proves that there's plenty of room for me to grow when it comes to 3D modelling.</p>
+						<h4>Audio Editing</h4>
+						<p>For the audio editing in Premiere Pro, I learned how to do a fade in/out using the keyframes on the audio clip itself so the clips wouldn't feel so choppy.</p>
+					<h3>Resources</h3>
+						<p>2D image of camera in island was taken from <a href="http://www.ebay.co.uk/itm/Professional-Quality-Collapsible-Tripod-For-Canon-EOS-550D-EOS-600D-EOS-60D-/390379049116">here</a> which is an Ebay listing. Backup image incase Ebay deletes that page is <a href="http://imgur.com/OvbXo8q">on Imgur</a>. Copyright information is unknown but assumed to belong to Canon. The image just fit perfectly with what I was looking for.</p>
+						<p>2D image of the cello was taken from <a href="http://en.wikipedia.org/wiki/File:Cello_front_side.png">Wiki</a>, the copyright holder is Georg Feitscher.The audio for the clip was taken from <a href="http://www.youtube.com/watch?v=mGQLXRTl3Z0">Youtube.</a></p>
+						<p>Textures used in Islands were obtained from <a href="http://www.cgtextures.com/">CG Textures.</a></p>
+						<p>Homepage arrow taken from <a href="http://www.universal-web-design.com/hand-drawn-arrow.aspx">Universal Web Design.</a></p>
+						<h1>Band Information</h1>
+							<ul class="bandinfo">
+								<li><a href="http://www.bastillebastille.com/allthisbadblood/">Bastille</a></li>
+								<li><a href="http://chvrch.es/">Chvrches</a></li>
+								<li><a href="http://dispatchmusic.com/">Dispatch</a></li>
+								<li><a href="http://awolnationmusic.com/">Awolnation</a></li>
+								<li><a href="http://www.thetallestmanonearth.com/">The Tallest Man on Earth</a></li>
+							</ul>
+						<h1>Video Information</h1>
+							<ul class="bandinfo">
+								<li><a href="http://www.drwho-online.co.uk/">Doctor Who</a></li>
+								<li><a href="http://www.howtotrainyourdragon.co.uk/">How To Train Your Dragon</a></li>
+								<li><a href="http://www.imdb.com/title/tt0304141/">Harry Potter:Azkaban</a></li>
+							</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- JavaScript Scrolling and jQuery from http://tympanus.net/codrops/2010/06/02/smooth-vertical-or-horizontal-page-scrolling-with-jquery/ -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript">
+		    $(function() {
+			    $('.smoothscroll').bind('click',function(event){
+			        var $anchor = $(this);
+
+			        $('html, body').stop().animate({
+			            scrollTop: $($anchor.attr('href')).offset().top-40 /* top-50 is so the scrolling stops 50px above my content since I have a fixed header nav bar of 50px */
+			        }, 500,'easeInOutExpo');
+			        /*
+			        if you don't want to use the easing effects:
+			        $('html, body').stop().animate({
+			            scrollTop: $($anchor.attr('href')).offset().top
+			        }, 1000);
+			        */
+			        event.preventDefault();
+			    });
+			});
+		</script>
+	</body>
+</html>

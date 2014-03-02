@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta NAME="course" CONTENT="G451">
+	<meta NAME="award" CONTENT="BSc/DigitalMedia">
+	<meta NAME="type" CONTENT="student">
+	<!-- Please do not remove the above tags -->
+	<title>Nichole: designer, developer, student</title>
+	<link rel="stylesheet" href="css/mms.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+	<body>
+		<div id="header-wrapper">
+			 <nav>
+				<ul class="nav">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="#">Multimedia Studio Projects</a>
+							<ul>
+								<li><a href="#project-1" class="smoothscroll">Adobe Premiere Pro</a></li>
+								<li><a href="#project-2" class="smoothscroll">Maya Planet</a></li>
+								<li><a href="#project-3" class="smoothscroll">Pro Tools</a></li>
+								<li><a href="#project-4" class="smoothscroll">Adobe Flash</a></li>
+								<li><a href="#project-5" class="smoothscroll">Scripting Exercise</a></li>
+							</ul>
+					</li>
+					<li><a href="work.html">My Other Work</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="contentcontainer">
+			<a href="#intro" id="up" class="smoothscroll"><img src="img/top.png"></a>
+			<div class="intro" id="intro">
+				<div class="wrapper">
+					<img src="img/dashed.png">
+					<h2>Here you can find a list of projects I'm working on for my Multimedia Studio</h2>
+					<img src="img/dashed.png">
+					<img src="img/spinme.png" class="spin_me">
+					<p>These are the screenshots of my local files, I did the majority of the scenarios locally off my own machine and transfered everything for this site onto the university computers. So the resources for individual projects were local.</p>
+						<div class="one">
+							<img src="img/ScreenLocals.png" alt="Local Files"><p>Local Files</p>
+							<img src="img/ScreenHoliday.png" alt="Files for Holiday video"><p>Files for Holiday video</p>
+						</div>
+						<div class="two">
+							<img src="img/ScreenMaya.png" alt="Files for Maya Planet"><p>Files for Maya Planet</p>
+							<img src="img/ScreenVideos.png" alt="Files for Load Video with Button"><p>Files for Load Video with Button</p>
+						</div>
+						<div>
+							<img src="img/ScreenUnix.png" alt="Files on Unix Server"><p>Files on Unix Server</p>
+						</div>
+				</div>
+			</div>
+			<div class="patterndown"></div>
+			<div class="project" id="project-1">
+				<div class="wrapper">
+					<h2>Adobe Premiere Pro</h2>
+						<p>This is the Holiday video I created in Adobe Premiere Pro using video and audio clips provided to me by the lecturer</p>
+						<img src="img/OneAudio.png">
+						<img src="img/Videosshortenedwithaudio.png">
+						<img src="img/Finalwithtitles.png">
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/ZR7H2ET8bJs" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="pattern"></div>
+			<div class="project" id="project-2">
+				<div class="wrapper">
+					<h2>Maya Planet</h2>
+						<p>For my animation of a planet of my choice, I chose to stick with what I knew and make an animation of Earth</p>
+						<p>Starting off with a polygon sphere.</p> 
+						<img src="img/sphere.png">
+						<p>Adding on a lambert texture for a base.</p>
+						<img src="img/lamberttexture.png">
+						<p>Next I added on the earth texture.</p>
+						<img src="img/earthtexture.png">
+						<p>Lighting was added with a directional light, representing the Sun's light.</p>
+						<img src="img/directionallight.png">
+						<p>Linear tangents were implemented to keep the Earth from starting off at a slower speed, and also to keep it from decreasing nearer the end of the rotation. This just kept it with a smooth rotation.</p>
+						<img src="img/lineartangents.png">
+						<p>Z axis tilt at 22.5 degrees in viewport</p>
+						<img src="img/zaxistiltviewports.png">
+						<p>The final render of the planet is seen below</p>
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/CsNL14gkCZE" frameborder="0" allowfullscreen></iframe>
+						<h2>Working with Adobe Premiere Pro</h2>
+						<p>When importing the 720 still frames into Adobe Premiere Pro, along with the enigmatic.wav soundtrack given to us by our lecturer, I am able to create a short film animation of the earth's rotation.</p>
+						<img src="img/premierepro.png">
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/32TBBN2JeAg" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="patterndown"></div>
+			<div class="project" id="project-3">
+				<div class="wrapper">
+					<h2>Pro Tools</h2>
+				</div>
+			</div>
+			<div class="pattern"></div>
+			<div class="project" id="project-4">
+				<div class="wrapper">
+					<h2>Adobe Flash</h2>
+
+					<p>Load Video with Button</p>
+						<embed src="videos/loadandplaybuttonvideo.swf" width="500" height="500">
+
+				</div>
+				</div>
+			</div>
+			<div class="patterndown"></div>
+			<div class="project" id="project-5">
+				<div class="wrapper">
+					<h2>Scripting Exercise</h2>
+					<p>Guessing Game</p>
+					<embed src="videos/GuessingGame.swf" width="500" height="600">
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScript Scrolling and jQuery from http://tympanus.net/codrops/2010/06/02/smooth-vertical-or-horizontal-page-scrolling-with-jquery/ -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript">
+		    $(function() {
+			    $('.smoothscroll').bind('click',function(event){
+			        var $anchor = $(this);
+			 
+			        $('html, body').stop().animate({
+			            scrollTop: $($anchor.attr('href')).offset().top-40 /* top-50 is so the scrolling stops 50px above my content since I have a fixed header nav bar of 50px */
+			        }, 500,'easeInOutExpo');
+			        /*
+			        if you don't want to use the easing effects:
+			        $('html, body').stop().animate({
+			            scrollTop: $($anchor.attr('href')).offset().top
+			        }, 1000);
+			        */
+			        event.preventDefault();
+			    });
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta NAME="course" CONTENT="G451">
+	<meta NAME="award" CONTENT="BSc/DigitalMedia">
+	<meta NAME="type" CONTENT="student">
+	<!-- Please do not remove the above tags -->
+	<title>Nichole: Form 3</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header Wrapper -->
+<div id="header-wrapper">
+	<div class="container">
+		<!-- Header -->
+		<div id="header">
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1>Form Three</h1>
+				<span class="byline">This is the third form for Form Exercises</span>
+			</div>
+			<!-- /Logo -->
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="work.html">My Work</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</nav>
+			<!-- /Nav -->
+
+		</div>
+		<!-- /Header -->
+	</div>
+</div>
+<!-- /Header Wrapper -->
+
+<!-- Main Wrapper -->
+<div class="wrapper">
+	<div class="title">Exercise Three</div>
+
+<!-- Content -->
+<div id="content">
+
+<script>
+function validateForm() {
+var x=document.forms["form2"]["firstname"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+var x=document.forms["form2"]["lastname"].value;
+if (x==null || x=="")
+  {
+  alert("Last name must be filled out");
+  return false;
+  }
+var x=document.forms["form2"]["email"].value;
+if (x==null || x=="")
+  {
+  alert("Email must be filled out");
+  return false;
+  }
+var x=document.forms["form2"]["message"].value;
+if (x==null || x=="")
+  {
+  alert("Message field must be filled out");
+  return false;
+  }
+}
+
+// Below script found at echoecho.com, used to validate the email input.
+function emailvalidation(entered, alertbox) {
+// E-mail Validation by Henrik Petersen / NetKontoret
+// Explained at www.echoecho.com/jsforms.htm
+// Please do not remove this line and the two lines above.
+with (entered) {
+	apos=value.indexOf("@"); 
+	dotpos=value.lastIndexOf(".");
+	lastpos=value.length-1;
+	if (apos<1 || dotpos-apos<2 || lastpos-dotpos>3 || lastpos-dotpos<2) 
+	{if (alertbox) {alert(alertbox);} return false;}
+	else {return true;}
+	}
+} 
+</script>
+
+<form class="form3" action="http://www.cems.uwe.ac.uk/tdrewry/cgi/cgiform.cgi" onsubmit="return validateForm()" method="POST" name="form3">
+	<span class="required_notification">* Required</span>
+		<ul>
+			<li>
+				<label for="firstname">* First name:</label>
+				<input type="text" name="firstname" id="firstname" required> <!-- 'required' in input tag is HTML5 new validation. Works like a charm! Can edit with CSS, for example of that, see my itwpassignment folder -->
+				<label for="lastname">* Last name:</label>
+				<input type="text" name="lastname" id="lastname" required>
+			</li>
+			<li>
+				<label for="email">* Email:</label>
+				<input type="email" name="email" id="email" placeholder="Enter a valid email" onChange="emailvalidation(this,'The email given is not valid');" required>
+			</li>
+			<li>
+				<span id="gender">Gender:</span>
+				<div class="genders split-inputs">
+					<label><input type="radio" name="gender" value="Male" id="male">Male</label>
+					<label><input type="radio" name="gender" value="Female" id="female">Female</label>
+				</div>
+			</li>
+			<li>
+				<label for="age">How old are you?</label>
+				<select name="age" id="age">
+					<option selected="selected"> </option>
+					<optgroup label="Teenager">
+						<option>13-15</option>
+						<option>16-19</option>
+					</optgroup>
+					<optgroup label="Adult">
+						<option>20-25</option>
+						<option>25-30</option>
+						<option>30+</option>
+					</optgroup>
+				</select>
+			</li>
+			<li>
+				<span id="address">* Where do you live?</span>
+				<div class="address-inputs">
+					<label for="street">Street name:</label>
+					<input type="text" name="address" id="street" required>
+					<label for="postcode">Post code:</label>
+					<input type="text" name="address" id="postcode" required>
+					<label for="country">Country:</label>
+					<input type="text" name="address" id="country" required>
+				</div>
+			</li>
+			<li>
+				<span id="hobbies">What are some of your favourite hobbies?</span>
+				<div class="controls" aria-labelledby="hobbies">
+					<label><input type="checkbox" name="hobby" value="reading" id="reading">Reading</label>
+					<label><input type="checkbox" name="hobby" value="programming" id="programming">Programming</label>
+					<label><input type="checkbox" name="hobby" value="cycling" id="cycling">Cycling</label>
+					<label><input type="checkbox" name="hobby" value="craft" id="craft">Crafts</label>
+					<label><input type="checkbox" name="hobby" value="games" id="games">Video Games</label>   
+					<label><input type="checkbox" name="hobby" value="hiking" id="hiking">Hiking</label>
+					<label><input type="checkbox" name="hobby" value="other" id="other">Other</label>
+				</div>
+			</li>
+			<li>
+				<label for="message">* Message:</label>
+				<textarea name="message" id="message" rows="6" cols="40" required></textarea>
+			</li>
+		</ul>
+		<button class="submit" type="submit">Submit</button>
+	</form>
+</div>
+<h2><a href="itwp.html">Go Back</a></h2>
+<!-- /Content -->
+
+</div>
+<!-- /Main Wrapper -->
+
+</body>
+</html>
