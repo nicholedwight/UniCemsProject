@@ -1,6 +1,6 @@
 body {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   text-align: center;
   margin: 0;
 }
@@ -243,7 +243,22 @@ h2 {
 	margin: 0;
 }
 
+table {
+  margin: 0 auto;
+}
 
+table a, table a:visited {
+  text-decoration: none;
+  color: #EED5FF;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+tr, td, th {
+  border: 1px solid black;
+}
 .bandinfo li {
   display: block;
   background: transparent;
