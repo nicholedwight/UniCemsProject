@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 }
-	
+
 h2 > span {
 	color: #E97770;
 }
@@ -68,14 +68,14 @@ a:hover {
 	text-align: center;
 	margin-top: -0.5em;
 }
-	
+
 #logo h1 {
 	font-size: 2em;
 	letter-spacing: 0.25em;
 	text-transform: uppercase;
 	color: #fff;
 }
-		
+
 #logo .byline {
 	color: #eee;
 	color: rgba(255,255,255,0.5);
@@ -93,7 +93,7 @@ a:hover {
 	height: 130;
 	position: absolute;
 	left: 50%;
-	top: 50%; 
+	top: 50%;
 	margin-left: -20em;
 	margin-top: -3em;
 }
