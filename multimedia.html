@@ -13,19 +13,11 @@
 		<div id="header-wrapper">
 			 <nav>
 				<ul class="nav">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="#">Multimedia Studio Projects</a>
-							<ul>
-								<li><a href="#project-1" class="smoothscroll">Adobe Premiere Pro</a></li>
-								<li><a href="#project-2" class="smoothscroll">Maya Planet</a></li>
-								<li><a href="#project-3" class="smoothscroll">Pro Tools</a></li>
-								<li><a href="#project-4" class="smoothscroll">Adobe Flash</a></li>
-								<li><a href="#project-5" class="smoothscroll">Scripting Exercise</a></li>
-							</ul>
-					</li>
+					<li><a href="#project-1" class="smoothscroll">Adobe Premiere Pro</a></li>
+					<li><a href="#project-2" class="smoothscroll">Maya Planet</a></li>
+					<li><a href="#project-3" class="smoothscroll">Pro Tools</a></li>
+					<li><a href="#project-4" class="smoothscroll">Adobe Flash</a></li>
+					<li><a href="#project-5" class="smoothscroll">Scripting Exercise</a></li>
 					<li><a href="work.html">My Other Work</a></li>
 				</ul>
 			</nav>
@@ -38,15 +30,6 @@
 					<h2>Here you can find a list of projects I'm working on for my Multimedia Studio</h2>
 					<img src="img/dashed.png">
 					<img src="img/spinme.png" class="spin_me">
-					<p>Quick Jump to various projects
-						<ul class="quickjump">
-							<li><a href="#project-1" class="smoothscroll">Adobe Premiere Pro</a></li>
-							<li><a href="#project-2" class="smoothscroll">Maya Planet</a></li>
-							<li><a href="#project-3" class="smoothscroll">Pro Tools</a></li>
-							<li><a href="#project-4" class="smoothscroll">Adobe Flash</a></li>
-							<li><a href="#project-5" class="smoothscroll">Scripting Exercise</a></li>
-						</ul>
-				  </p>
 					<p>These are the screenshots of my local files, I did the majority of the scenarios locally off my own machine and transfered everything for this site onto the university computers. So the resources for individual projects were local.</p>
 						<div class="one">
 							<img src="img/ScreenLocals.png" alt="Local Files"><p>Local Files</p>
@@ -138,7 +121,7 @@
 			        var $anchor = $(this);
 
 			        $('html, body').stop().animate({
-			            scrollTop: $($anchor.attr('href')).offset().top-40 /* top-50 is so the scrolling stops 50px above my content since I have a fixed header nav bar of 50px */
+			            scrollTop: $($anchor.attr('href')).offset().top-0 /* top-50 is so the scrolling stops 50px above my content since I have a fixed header nav bar of 50px */
 			        }, 500,'easeInOutExpo');
 			        /*
 			        if you don't want to use the easing effects:
